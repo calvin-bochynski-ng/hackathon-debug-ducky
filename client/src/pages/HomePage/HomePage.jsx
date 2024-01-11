@@ -51,7 +51,8 @@ const HomePage = () => {
             <a
               href={methodInfo.link}
               target="_blank"
-              className="ducky-feature__link">
+              className="ducky-feature__link"
+            >
               Click me to find out more...
             </a>
           </article>
