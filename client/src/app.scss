@@ -1,1 +1,6 @@
-@use "./styles//partials/resets";
+@use "./styles/partials/resets";
+
+.app {
+  margin: 0 auto;
+  width: 1280px;
+}
