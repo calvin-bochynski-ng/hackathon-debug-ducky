@@ -1,26 +1,26 @@
 [
   {
     "method": "basic",
-    "description": "Basic routing method in React Router.",
-    "example": "Example code for basic routing.",
-    "link": "Link to documentation page for basic routing"
+    "description": "a JavaScript framework that lets us handle client and server-side routing in React applications.",
+    "example": "import { BroswerRouter, Routes, Route, Link } from 'react-router-dom';",
+    "link": "https://reactrouter.com/en/main"
   },
   {
-    "method": "useParam",
-    "description": "Hook to access parameters from the current route in React Router.",
-    "example": "Example code demonstrating the use of useParam hook.",
-    "link": "Link to documentation page for useParam hook"
+    "method": "useParams",
+    "description": "The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched by the <Route path>. Child routes inherit all params from their parent routes.",
+    "example": "{/* Get the userId param from the URL. */}\nlet { userId } = useParams();",
+    "link": "https://reactrouter.com/en/main/hooks/use-params"
   },
   {
     "method": "useNavigate",
-    "description": "Hook for navigating programmatically in React Router.",
-    "example": "Example code demonstrating the use of useNavigate hook.",
-    "link": "Link to documentation page for useNavigate hook"
+    "description": "The useNavigate hook returns a function that lets you navigate programmatically",
+    "example": "import { useNavigate } from 'react-router-dom';\nconst navigate = useNavigate();",
+    "link": "https://reactrouter.com/en/main/hooks/use-navigate"
   },
   {
     "method": "link",
-    "description": "Component for creating navigation links in React Router.",
-    "example": "Example code for using the Link component.",
-    "link": "Link to documentation page for Link component"
+    "description": "A <Link> is an element that lets the user navigate to another page by clicking or tapping on it. ",
+    "example": "import { Link } from 'react-router-dom';\n<Link to={user.id}>{user.name}</Link>",
+    "link": "https://reactrouter.com/en/main/components/link"
   }
 ]

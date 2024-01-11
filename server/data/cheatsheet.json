@@ -33,7 +33,7 @@
   },
   {
     "name": "react-router",
-    "method": ["basic", "useParam", "useNavigate", "link"]
+    "method": ["basic", "useParams", "useNavigate", "link"]
   },
   {
     "name": "node",
