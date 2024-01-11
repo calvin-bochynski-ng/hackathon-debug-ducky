@@ -1,0 +1,7 @@
+@use "../../styles/partials/variables.scss" as *;
+
+.header {
+  &__logo {
+    width: 2rem;
+  }
+}
