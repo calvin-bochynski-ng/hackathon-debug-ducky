@@ -1,1 +1,21 @@
 @use "../../styles/partials/variables.scss" as *;
+
+.side-nav {
+  height: 100%;
+  width: 20%;
+  overflow: auto;
+  &__list {
+    text-decoration: none;
+    list-style: none;
+  }
+  &__item {
+    padding: 0.5rem 0;
+    &:hover {
+      color: $primary-hover-color;
+    }
+  }
+}
+
+.side-nav::-webkit-scrollbar {
+  display: none;
+}

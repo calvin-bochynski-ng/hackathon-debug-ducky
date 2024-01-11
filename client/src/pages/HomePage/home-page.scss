@@ -3,4 +3,16 @@
 .main {
   margin: 0 auto;
   width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+  overflow: hidden;
+}
+
+.ducky-feature {
+  width: 80%;
+  position: relative;
+  &__article {
+    padding-right: 10rem;
+  }
 }

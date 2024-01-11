@@ -10,18 +10,19 @@ const HomePage = () => {
   return (
     <main className="main">
       <SideNav setMethodInfo={setMethodInfo} />
-
-      {!methodInfo ? (
-        <p>Nothing selected</p>
-      ) : (
-        <article>
-          <h1>{methodInfo.method}</h1>
-          <p>{methodInfo.description}</p>
-          <code>{methodInfo.example}</code>
-          <a href="methodInfo.link">{methodInfo.link}</a>
-        </article>
-      )}
-      <Duck />
+      <div className="ducky-feature">
+        {!methodInfo ? (
+          <p>Nothing selected</p>
+        ) : (
+          <article className="ducky-feature__article">
+            <h1>{methodInfo.method}</h1>
+            <p>{methodInfo.description}</p>
+            <code>{methodInfo.example}</code>
+            <a href="methodInfo.link">{methodInfo.link}</a>
+          </article>
+        )}
+        <Duck />
+      </div>
       {/* <Form setMethodInfo={setMethodInfo} /> */}
     </main>
   );

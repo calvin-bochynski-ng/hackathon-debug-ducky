@@ -11,3 +11,7 @@ body {
   margin: 0;
   color: $primary-text-color;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
