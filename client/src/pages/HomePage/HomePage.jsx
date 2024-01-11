@@ -2,6 +2,7 @@ import { useState } from "react";
 import DropDown from "../../components/DropDown/DropDown";
 import Duck from "../../components/Duck/Duck";
 import Form from "../../components/Form/Form";
+import SideNav from "../../components/SideNav/SideNav";
 
 const HomePage = () => {
   const [methodInfo, setMethodInfo] = useState(null);
@@ -18,7 +19,8 @@ const HomePage = () => {
         </article>
       )}
       <Duck />
-      <Form setMethodInfo={setMethodInfo} />
+      {/* <Form setMethodInfo={setMethodInfo} /> */}
+      <SideNav setMethodInfo={setMethodInfo} />
     </main>
   );
 };
