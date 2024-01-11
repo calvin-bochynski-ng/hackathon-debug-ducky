@@ -30,7 +30,13 @@ const HomePage = () => {
             <h1>{methodInfo.method}</h1>
             <p>{methodInfo.description}</p>
             <code>{methodInfo.example}</code>
-            <a href="methodInfo.link">{methodInfo.link}</a>
+            <a
+              href={methodInfo.link}
+              target="_blank"
+              className="ducky-feature__link"
+            >
+              Click me to find out more...
+            </a>
           </article>
         )}
         <Duck />
