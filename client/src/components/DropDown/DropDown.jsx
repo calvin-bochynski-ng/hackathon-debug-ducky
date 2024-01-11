@@ -1,6 +1,6 @@
 import "./drop-down.scss";
 
-const DropDown = ({ title, methods }) => {
+const DropDown = ({ title, methods, onChange }) => {
   if (!methods) {
     return "no methods";
   }
@@ -8,7 +8,10 @@ const DropDown = ({ title, methods }) => {
   return (
     <div>
       <label htmlFor="method">{title}</label>
-      <select name="method" id="method">
+      <select
+        name={title === "react-router" ? "router" : title}
+        id="method"
+        onChange={onChange}>
         <option value="">{title} Method</option>
         {methods.map((method, index) => {
           return <option key={index}>{method}</option>;
