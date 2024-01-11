@@ -2,12 +2,23 @@ require("dotenv").config();
 
 const express = require("express");
 const cors = require("cors");
+const fs = require("fs");
 const app = express();
 const SERVER_PORT = process.env.PORT;
 const SERVER_API_URL = process.env.API_URL;
 
 app.use(express.json());
 app.use(cors());
+
+const readCheatSheet = () => {
+  const data = fs.readFileSync("./data/cheatsheet.json");
+  return JSON.parse(data);
+};
+
+app.get("/", (req, res) => {
+  const cheatSheet = readCheatSheet();
+  res.json(cheatSheet);
+});
 
 app.listen(
   SERVER_PORT,
