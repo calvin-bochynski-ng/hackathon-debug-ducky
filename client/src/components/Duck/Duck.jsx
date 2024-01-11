@@ -4,11 +4,12 @@ import sideDuck from "../../assets/images/rubber-duck-side-closed.svg";
 import sideDuckOpen from "../../assets/images/rubber-duck-side-open.svg";
 import "./duck.scss";
 
-const Duck = () => {
-  const [isDuckForward, setIsDuckForward] = useState(true);
+const Duck = ({ isDuckForward, setIsDuckForward, setMethodInfo }) => {
+  // const [isDuckForward, setIsDuckForward] = useState(true);
   const [isDuckOpen, setIsDuckOpen] = useState(false);
   const handleChangeDuck = () => {
-    setIsDuckForward(!isDuckForward);
+    setIsDuckForward(true);
+    setMethodInfo(null);
   };
 
   const talkingDuck = () => {
