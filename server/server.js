@@ -11,6 +11,7 @@ const arrayMethod = require("./routes/arrayRoute");
 const reactMethod = require("./routes/reactRoute");
 const reactRouterMethod = require("./routes/reactRouterRoute");
 const nodeMethod = require("./routes/nodeRoute");
+const messageMethod = require("./routes/randomRoute");
 
 app.use(express.json());
 app.use(cors());
@@ -19,6 +20,7 @@ app.use("/array", arrayMethod);
 app.use("/react", reactMethod);
 app.use("/react-router", reactRouterMethod);
 app.use("/node", nodeMethod);
+app.use("/random-message", messageMethod);
 
 const readCheatSheet = () => {
   const data = fs.readFileSync("./data/cheatsheet.json");
