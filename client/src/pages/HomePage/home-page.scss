@@ -13,6 +13,20 @@
   width: 80%;
   position: relative;
   &__article {
+    border-radius: 5px;
+    background-color: $alt-background-color;
+    padding: 3rem 2rem;
     padding-right: 10rem;
+    margin-top: 3rem;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    color: $alt-text-color;
+    height: 30rem;
+  }
+  &__link {
+    list-style: none;
+    text-decoration: none;
+    color: $alt-text-color;
   }
 }
