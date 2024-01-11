@@ -1,16 +1,28 @@
 import "./home-page.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import DropDown from "../../components/DropDown/DropDown";
 import Duck from "../../components/Duck/Duck";
 // import Form from "../../components/Form/Form";
 import SideNav from "../../components/SideNav/SideNav";
+import axios from "axios";
 
 const HomePage = () => {
+  const baseUrl = process.env.REACT_APP_BASE_URL;
   const [methodInfo, setMethodInfo] = useState(null);
+  const [message, setMessage] = useState(null);
+  useEffect(() => {
+    const getRandomMsg = async () => {
+      const { data } = await axios.get(baseUrl + "random-message");
+      // console.log(data);
+      setMessage(data);
+    };
+    getRandomMsg();
+  }, []);
   return (
     <main className="main">
       <SideNav setMethodInfo={setMethodInfo} />
       <div className="ducky-feature">
+        {!message ? <p>getting message</p> : <h2>{message}</h2>}
         {!methodInfo ? (
           <p>Nothing selected</p>
         ) : (
