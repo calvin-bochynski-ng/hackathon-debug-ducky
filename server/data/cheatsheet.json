@@ -1,7 +1,7 @@
 [
   {
     "name": "array",
-    "methods": [
+    "method": [
       "push",
       "pop",
       "shift",
