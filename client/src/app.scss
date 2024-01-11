@@ -1,6 +1,6 @@
 @use "./styles/partials/resets";
+@use "./styles/partials/variables.scss" as *;
 
 .app {
-  margin: 0 auto;
-  width: 1280px;
+  background-color: $primary-background-color;
 }

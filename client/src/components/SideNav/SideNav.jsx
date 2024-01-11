@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./side-nav.scss";
 import axios from "axios";
 
 const SideNav = ({ setMethodInfo }) => {
@@ -25,18 +26,20 @@ const SideNav = ({ setMethodInfo }) => {
     } catch (error) {}
   };
   return (
-    <>
+    <section className="side-nav">
       {cheatSheet.map((obj, index) => {
         return (
-          <section key={index}>
-            <h2>{obj.name}</h2>
-            <ul>
+          <section key={index} className="side-nav__heading">
+            <h2 className="side-nav__title">{obj.name}</h2>
+            <ul className="side-nav__list">
               {obj.method.map((el) => (
                 <li
                   key={el}
                   onClick={() => {
                     handleClick(obj.name, el);
-                  }}>
+                  }}
+                  className="side-nav__item"
+                >
                   {el}
                 </li>
               ))}
@@ -44,7 +47,7 @@ const SideNav = ({ setMethodInfo }) => {
           </section>
         );
       })}
-    </>
+    </section>
   );
 };
 

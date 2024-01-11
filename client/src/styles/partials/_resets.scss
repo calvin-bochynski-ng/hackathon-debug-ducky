@@ -1,3 +1,5 @@
+@use "../../styles/partials/variables.scss" as *;
+
 *,
 *::before,
 *::after {
@@ -7,4 +9,5 @@
 body {
   font-family: monospace;
   margin: 0;
+  color: $primary-text-color;
 }
