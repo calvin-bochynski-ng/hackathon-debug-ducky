@@ -1,0 +1,50 @@
+[
+  {
+    "method": "use",
+    "description": "Middleware function that is executed for every request to the router.",
+    "example": "app.use(middlewareFunction);",
+    "link": "https://expressjs.com/en/api.html#app.use"
+  },
+  {
+    "method": "get",
+    "description": "Routes HTTP GET requests to the specified path with the specified callback functions.",
+    "example": "app.get('/path', callbackFunction);",
+    "link": "https://expressjs.com/en/api.html#app.get.method"
+  },
+  {
+    "method": "post",
+    "description": "Routes HTTP POST requests to the specified path with the specified callback functions.",
+    "example": "app.post('/path', callbackFunction);",
+    "link": "https://expressjs.com/en/api.html#app.post.method"
+  },
+  {
+    "method": "put",
+    "description": "Routes HTTP PUT requests to the specified path with the specified callback functions.",
+    "example": "app.put('/path', callbackFunction);",
+    "link": "https://expressjs.com/en/api.html#app.put.method"
+  },
+  {
+    "method": "patch",
+    "description": "Routes HTTP PATCH requests to the specified path with the specified callback functions.",
+    "example": "app.patch('/path', callbackFunction);",
+    "link": "https://expressjs.com/en/api.html#app.patch.method"
+  },
+  {
+    "method": "routes",
+    "description": "Mounts a router instance to a path and forwards routing to that router.",
+    "example": "app.use('/path', router);",
+    "link": "https://expressjs.com/en/api.html#app.route"
+  },
+  {
+    "method": "dotenv",
+    "description": "Zero-dependency module that loads environment variables from a .env file.",
+    "example": "require('dotenv').config();",
+    "link": "https://www.npmjs.com/package/dotenv"
+  },
+  {
+    "method": "middleware",
+    "description": "Functions that have access to the request object (req), the response object (res), and the next middleware function in the application's request-response cycle.",
+    "example": "function middlewareFunction(req, res, next) { /* your code here */ }",
+    "link": "https://expressjs.com/en/guide/using-middleware.html"
+  }
+]
