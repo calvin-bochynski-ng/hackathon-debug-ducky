@@ -4,6 +4,7 @@ import Duck from "../../components/Duck/Duck";
 import SideNav from "../../components/SideNav/SideNav";
 import axios from "axios";
 import { CodeBlock, atomOneDark } from "react-code-blocks";
+import { TypeAnimation } from "react-type-animation";
 
 const HomePage = () => {
   const baseUrl = process.env.REACT_APP_BASE_URL;
@@ -25,7 +26,16 @@ const HomePage = () => {
         setIsDuckForward={setIsDuckForward}
       />
       <div className="ducky-feature">
-        {!message ? <p>getting message</p> : <h2>{message}</h2>}
+        {!message ? (
+          <p>getting message</p>
+        ) : (
+          <TypeAnimation
+            sequence={message}
+            wrapper="h2"
+            speed={80}
+            repeat={0}
+          />
+        )}
         {!methodInfo ? (
           <p></p>
         ) : (
