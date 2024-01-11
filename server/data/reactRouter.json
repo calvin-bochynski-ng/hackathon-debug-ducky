@@ -2,7 +2,7 @@
   {
     "method": "basic",
     "description": "a JavaScript framework that lets us handle client and server-side routing in React applications.",
-    "example": "import { BroswerRouter, Routes, Route, Link } from 'react-router-dom';",
+    "example": "import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';",
     "link": "https://reactrouter.com/en/main"
   },
   {
