@@ -28,7 +28,7 @@ const Form = ({ setMethodInfo }) => {
     try {
       e.preventDefault();
       const { data } = await axios.get(baseUrl + "array/" + formData.array);
-      console.log(data);
+      // console.log(data);
       setMethodInfo(data);
     } catch (error) {}
   };
