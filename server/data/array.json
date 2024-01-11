@@ -1,0 +1,92 @@
+[
+  {
+    "method": "push",
+    "description": "Adds one or more elements to the end of an array.",
+    "example": "array.push(element1, element2, ..., elementN);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
+  },
+  {
+    "method": "pop",
+    "description": "Removes the last element from an array and returns that element.",
+    "example": "var lastElement = array.pop();",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop"
+  },
+  {
+    "method": "shift",
+    "description": "Removes the first element from an array and returns that element.",
+    "example": "var firstElement = array.shift();",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift"
+  },
+  {
+    "method": "unshift",
+    "description": "Adds one or more elements to the beginning of an array.",
+    "example": "array.unshift(element1, element2, ..., elementN);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"
+  },
+  {
+    "method": "concat",
+    "description": "Combines two or more arrays.",
+    "example": "newArray = array1.concat(array2, array3, ..., arrayN);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+  },
+  {
+    "method": "slice",
+    "description": "Returns a shallow copy of a portion of an array.",
+    "example": "newArray = array.slice(start, end);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"
+  },
+  {
+    "method": "splice",
+    "description": "Changes the contents of an array by removing or replacing existing elements and/or adding new elements.",
+    "example": "array.splice(start, deleteCount, element1, element2, ..., elementN);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
+  },
+  {
+    "method": "indexOf",
+    "description": "Returns the first index at which a given element is present in the array, or -1 if it is not present.",
+    "example": "index = array.indexOf(element);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+  },
+  {
+    "method": "lastIndexOf",
+    "description": "Returns the last index at which a given element is present in the array, or -1 if it is not present.",
+    "example": "lastIndex = array.lastIndexOf(element);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+  },
+  {
+    "method": "forEach",
+    "description": "Calls a provided function once for each element in the array, in order.",
+    "example": "array.forEach(function(element, index, array) {\n  // your code here\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+  },
+  {
+    "method": "map",
+    "description": "Creates a new array with the results of calling a provided function on every element in the array.",
+    "example": "newArray = array.map(function(element, index, array) {\n  return /* new value based on element */;\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+  },
+  {
+    "method": "filter",
+    "description": "Creates a new array with all elements that pass the test implemented by the provided function.",
+    "example": "newArray = array.filter(function(element, index, array) {\n  return /* true if element passes the test */;\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+  },
+  {
+    "method": "reduce",
+    "description": "Applies a function against an accumulator and each element in the array to reduce it to a single value.",
+    "example": "result = array.reduce(function(accumulator, element, index, array) {\n  return /* new accumulator value based on element */;\n}, initialValue);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
+  },
+  {
+    "method": "every",
+    "description": "Tests whether all elements in the array pass the provided function.",
+    "example": "var allPass = array.every(function(element, index, array) {\n  return /* true if element passes the test */;\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+  },
+  {
+    "method": "some",
+    "description": "Tests whether at least one element in the array passes the provided function.",
+    "example": "var somePass = array.some(function(element, index, array) {\n  return /* true if element passes the test */;\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
+  }
+]

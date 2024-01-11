@@ -1,0 +1,26 @@
+[
+  {
+    "method": "basic",
+    "description": "Basic routing method in React Router.",
+    "example": "Example code for basic routing.",
+    "link": "Link to documentation page for basic routing"
+  },
+  {
+    "method": "useParam",
+    "description": "Hook to access parameters from the current route in React Router.",
+    "example": "Example code demonstrating the use of useParam hook.",
+    "link": "Link to documentation page for useParam hook"
+  },
+  {
+    "method": "useNavigate",
+    "description": "Hook for navigating programmatically in React Router.",
+    "example": "Example code demonstrating the use of useNavigate hook.",
+    "link": "Link to documentation page for useNavigate hook"
+  },
+  {
+    "method": "link",
+    "description": "Component for creating navigation links in React Router.",
+    "example": "Example code for using the Link component.",
+    "link": "Link to documentation page for Link component"
+  }
+]

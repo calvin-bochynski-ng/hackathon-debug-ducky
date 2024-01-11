@@ -1,0 +1,44 @@
+[
+  {
+    "method": "component",
+    "description": "The basic building block of a React application. A component is a reusable and self-contained piece of UI.",
+    "example": "const MyComponent = () => { /* JSX code here */ };",
+    "link": "https://reactjs.org/docs/components-and-props.html"
+  },
+  {
+    "method": "import-export",
+    "description": "JavaScript ES6 syntax for importing and exporting modules. Used to organize and structure code.",
+    "example": "import { someFunction } from './myModule';\nexport const myVariable = 42;",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import"
+  },
+  {
+    "method": "states",
+    "description": "States allow a React component to keep track of changing data within the component. State changes trigger re-rendering of the component.",
+    "example": "const [count, setCount] = useState(0);",
+    "link": "https://reactjs.org/docs/hooks-state.html"
+  },
+  {
+    "method": "props",
+    "description": "Short for properties, props are how components receive data from their parent component. Props are immutable.",
+    "example": "<MyComponent name='John' age={25} />",
+    "link": "https://reactjs.org/docs/components-and-props.html"
+  },
+  {
+    "method": "lifecycle",
+    "description": "React component lifecycle methods are special methods that get called at various points in a component's life, such as mounting, updating, and unmounting.",
+    "example": "componentDidMount() { /* Code to run after component is rendered */ }",
+    "link": "https://reactjs.org/docs/react-component.html#the-component-lifecycle"
+  },
+  {
+    "method": "useState",
+    "description": "A React hook that allows functional components to have state. It returns an array with the current state value and a function that lets you update it.",
+    "example": "const [count, setCount] = useState(0);",
+    "link": "https://reactjs.org/docs/hooks-state.html"
+  },
+  {
+    "method": "useEffect",
+    "description": "Another React hook that performs side effects in functional components. It is often used for data fetching, subscriptions, or manually changing the DOM.",
+    "example": "useEffect(() => { /* Code to run after render */ }, [dependencies]);",
+    "link": "https://reactjs.org/docs/hooks-effect.html"
+  }
+]
