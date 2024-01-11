@@ -5,6 +5,7 @@ import Duck from "../../components/Duck/Duck";
 // import Form from "../../components/Form/Form";
 import SideNav from "../../components/SideNav/SideNav";
 import axios from "axios";
+import { CodeBlock, atomOneDark } from "react-code-blocks";
 
 const HomePage = () => {
   const baseUrl = process.env.REACT_APP_BASE_URL;
@@ -29,7 +30,12 @@ const HomePage = () => {
           <article className="ducky-feature__article">
             <h1>{methodInfo.method}</h1>
             <p>{methodInfo.description}</p>
-            <code>{methodInfo.example}</code>
+            <CodeBlock
+              text={methodInfo.example}
+              language="javascript"
+              showLineNumbers={true}
+              theme={atomOneDark}
+            />
             <a
               href={methodInfo.link}
               target="_blank"
