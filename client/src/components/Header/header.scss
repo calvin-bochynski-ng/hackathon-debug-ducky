@@ -1,7 +1,40 @@
 @use "../../styles/partials/variables.scss" as *;
 
 .header {
+  margin: 0 auto;
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
   &__logo {
     width: 2rem;
+    margin: 1rem;
+  }
+  &__title {
+    margin: 1rem 0;
+    color: $primary-text-color;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: 0;
+    list-style: none;
+  }
+  &__item {
+    margin: 0 1rem;
+    color: $primary-text-color;
+    &:hover {
+      color: $primary-hover-color;
+    }
   }
 }

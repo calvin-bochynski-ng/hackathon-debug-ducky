@@ -1,13 +1,16 @@
+import "./home-page.scss";
 import { useState } from "react";
-import DropDown from "../../components/DropDown/DropDown";
+// import DropDown from "../../components/DropDown/DropDown";
 import Duck from "../../components/Duck/Duck";
-import Form from "../../components/Form/Form";
+// import Form from "../../components/Form/Form";
 import SideNav from "../../components/SideNav/SideNav";
 
 const HomePage = () => {
   const [methodInfo, setMethodInfo] = useState(null);
   return (
-    <main>
+    <main className="main">
+      <SideNav setMethodInfo={setMethodInfo} />
+
       {!methodInfo ? (
         <p>Nothing selected</p>
       ) : (
@@ -20,7 +23,6 @@ const HomePage = () => {
       )}
       <Duck />
       {/* <Form setMethodInfo={setMethodInfo} /> */}
-      <SideNav setMethodInfo={setMethodInfo} />
     </main>
   );
 };
