@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./side-nav.scss";
 import axios from "axios";
 
-const SideNav = ({ setMethodInfo }) => {
+const SideNav = ({ setMethodInfo, setIsDuckForward }) => {
   const baseUrl = process.env.REACT_APP_BASE_URL;
   const [cheatSheet, setCheatSheet] = useState(null);
   useEffect(() => {
@@ -21,7 +21,6 @@ const SideNav = ({ setMethodInfo }) => {
   const handleClick = async (name, method) => {
     try {
       const { data } = await axios.get(baseUrl + name + "/" + method);
-      // console.log(data);
       setMethodInfo(data);
     } catch (error) {}
   };
@@ -37,9 +36,9 @@ const SideNav = ({ setMethodInfo }) => {
                   key={el}
                   onClick={() => {
                     handleClick(obj.name, el);
+                    setIsDuckForward(false);
                   }}
-                  className="side-nav__item"
-                >
+                  className="side-nav__item">
                   {el}
                 </li>
               ))}
