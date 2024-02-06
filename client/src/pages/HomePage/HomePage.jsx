@@ -2,19 +2,18 @@ import "./home-page.scss";
 import { useEffect, useState } from "react";
 import Duck from "../../components/Duck/Duck";
 import SideNav from "../../components/SideNav/SideNav";
-import axios from "axios";
 import { CodeBlock, atomOneDark } from "react-code-blocks";
 import { TypeAnimation } from "react-type-animation";
+import randomMessage from "../../data/encouraging-msg.json";
 
 const HomePage = () => {
-  const baseUrl = process.env.REACT_APP_BASE_URL;
   const [methodInfo, setMethodInfo] = useState(null);
   const [message, setMessage] = useState(null);
   const [isDuckForward, setIsDuckForward] = useState(true);
   useEffect(() => {
     const getRandomMsg = async () => {
-      const { data } = await axios.get(baseUrl + "random-message");
-      setMessage(data);
+      const index = Math.floor(Math.random() * randomMessage.length);
+      setMessage(randomMessage[index]);
     };
     getRandomMsg();
   }, []);
@@ -63,7 +62,6 @@ const HomePage = () => {
           setMethodInfo={setMethodInfo}
         />
       </div>
-      {/* <Form setMethodInfo={setMethodInfo} /> */}
     </main>
   );
 };

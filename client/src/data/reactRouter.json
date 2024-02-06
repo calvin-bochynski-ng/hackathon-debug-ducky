@@ -1,0 +1,26 @@
+[
+  {
+    "method": "basic",
+    "description": "a JavaScript framework that lets us handle client and server-side routing in React applications.",
+    "example": "import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';",
+    "link": "https://reactrouter.com/en/main"
+  },
+  {
+    "method": "useParams",
+    "description": "The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched by the <Route path>. Child routes inherit all params from their parent routes.",
+    "example": "{/* Get the userId param from the URL. */}\nlet { userId } = useParams();",
+    "link": "https://reactrouter.com/en/main/hooks/use-params"
+  },
+  {
+    "method": "useNavigate",
+    "description": "The useNavigate hook returns a function that lets you navigate programmatically",
+    "example": "import { useNavigate } from 'react-router-dom';\nconst navigate = useNavigate();",
+    "link": "https://reactrouter.com/en/main/hooks/use-navigate"
+  },
+  {
+    "method": "link",
+    "description": "A <Link> is an element that lets the user navigate to another page by clicking or tapping on it. ",
+    "example": "import { Link } from 'react-router-dom';\n<Link to={user.id}>{user.name}</Link>",
+    "link": "https://reactrouter.com/en/main/components/link"
+  }
+]

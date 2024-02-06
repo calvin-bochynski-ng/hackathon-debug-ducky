@@ -1,0 +1,51 @@
+[
+  {
+    "name": "array",
+    "method": [
+      "push",
+      "pop",
+      "shift",
+      "unshift",
+      "concat",
+      "slice",
+      "splice",
+      "indexOf",
+      "lastIndexOf",
+      "forEach",
+      "map",
+      "filter",
+      "reduce",
+      "every",
+      "some"
+    ]
+  },
+  {
+    "name": "react",
+    "method": [
+      "component",
+      "import-export",
+      "states",
+      "props",
+      "lifecycle",
+      "useState",
+      "useEffect"
+    ]
+  },
+  {
+    "name": "react-router",
+    "method": ["basic", "useParams", "useNavigate", "link"]
+  },
+  {
+    "name": "node",
+    "method": [
+      "use",
+      "get",
+      "post",
+      "put",
+      "patch",
+      "routes",
+      "dotenv",
+      "middleware"
+    ]
+  }
+]

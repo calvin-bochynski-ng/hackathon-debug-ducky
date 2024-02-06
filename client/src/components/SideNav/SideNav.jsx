@@ -1,14 +1,18 @@
 import { useState, useEffect } from "react";
 import "./side-nav.scss";
 import axios from "axios";
+import cheatSheetInfo from "../../data/cheatsheet.json";
+import arrayMethod from "../../data/array.json";
+import nodeMethod from "../../data/node.json";
+import reactMethod from "../../data/react.json";
+import reactRouterMethod from "../../data/reactRouter.json";
 
 const SideNav = ({ setMethodInfo, setIsDuckForward }) => {
   const baseUrl = process.env.REACT_APP_BASE_URL;
   const [cheatSheet, setCheatSheet] = useState(null);
   useEffect(() => {
     const getCheatSheet = async () => {
-      const { data } = await axios.get(baseUrl);
-      setCheatSheet(data);
+      setCheatSheet(cheatSheetInfo);
     };
 
     getCheatSheet();
@@ -18,10 +22,22 @@ const SideNav = ({ setMethodInfo, setIsDuckForward }) => {
     return "Loading...";
   }
 
-  const handleClick = async (name, method) => {
+  const handleClick = async (name, mdnmethod) => {
     try {
-      const { data } = await axios.get(baseUrl + name + "/" + method);
-      setMethodInfo(data);
+      const methods = arrayMethod
+        .concat(nodeMethod)
+        .concat(reactMethod)
+        .concat(reactRouterMethod);
+
+      console.log(name);
+      console.log(mdnmethod);
+
+      const selectedMethod = methods.filter(
+        (title) => title.method === mdnmethod
+      );
+      console.log(...selectedMethod);
+
+      setMethodInfo(...selectedMethod);
     } catch (error) {}
   };
   return (
@@ -38,7 +54,8 @@ const SideNav = ({ setMethodInfo, setIsDuckForward }) => {
                     handleClick(obj.name, el);
                     setIsDuckForward(false);
                   }}
-                  className="side-nav__item">
+                  className="side-nav__item"
+                >
                   {el}
                 </li>
               ))}

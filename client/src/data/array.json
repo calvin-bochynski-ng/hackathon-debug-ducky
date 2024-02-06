@@ -1,0 +1,92 @@
+[
+  {
+    "method": "push",
+    "description": "The push() method of Array instances adds the specified elements to the end of an array and returns the new length of the array.",
+    "example": "array.push(element1, element2, ..., elementN);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
+  },
+  {
+    "method": "pop",
+    "description": "The pop() method of Array instances removes the last element from an array and returns that element. This method changes the length of the array.",
+    "example": "var lastElement = array.pop();",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop"
+  },
+  {
+    "method": "shift",
+    "description": "The shift() method of Array instances removes the first element from an array and returns that removed element. This method changes the length of the array.",
+    "example": "var firstElement = array.shift();",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift"
+  },
+  {
+    "method": "unshift",
+    "description": "The unshift() method of Array instances adds the specified elements to the beginning of an array and returns the new length of the array.",
+    "example": "array.unshift(element1, element2, ..., elementN);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"
+  },
+  {
+    "method": "concat",
+    "description": "The concat() method of Array instances is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.",
+    "example": "newArray = array1.concat(array2, array3, ..., arrayN);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+  },
+  {
+    "method": "slice",
+    "description": "The slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.",
+    "example": "newArray = array.slice(start, end);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"
+  },
+  {
+    "method": "splice",
+    "description": "The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.",
+    "example": "array.splice(start, deleteCount, element1, element2, ..., elementN);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
+  },
+  {
+    "method": "indexOf",
+    "description": "The indexOf() method of Array instances returns the first index at which a given element can be found in the array, or -1 if it is not present.",
+    "example": "index = array.indexOf(element);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+  },
+  {
+    "method": "lastIndexOf",
+    "description": "The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.",
+    "example": "lastIndex = array.lastIndexOf(element);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+  },
+  {
+    "method": "forEach",
+    "description": "The forEach() method of Array instances executes a provided function once for each array element.",
+    "example": "array.forEach(function(element, index, array) {\n  // your code here\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+  },
+  {
+    "method": "map",
+    "description": "The map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.",
+    "example": "newArray = array.map(function(element, index, array) {\n  return /* new value based on element */;\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+  },
+  {
+    "method": "filter",
+    "description": "The filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.",
+    "example": "newArray = array.filter(function(element, index, array) {\n  return /* true if element passes the test */;\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+  },
+  {
+    "method": "reduce",
+    "description": "The reduce() method of Array instances executes a user-supplied reducer callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.",
+    "example": "result = array.reduce(function(accumulator, element, index, array) {\n  return /* new accumulator value based on element */;\n}, initialValue);",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
+  },
+  {
+    "method": "every",
+    "description": "The every() method of Array instances tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.",
+    "example": "var allPass = array.every(function(element, index, array) {\n  return /* true if element passes the test */;\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+  },
+  {
+    "method": "some",
+    "description": "The some() method of Array instances tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.",
+    "example": "var somePass = array.some(function(element, index, array) {\n  return /* true if element passes the test */;\n});",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
+  }
+]
